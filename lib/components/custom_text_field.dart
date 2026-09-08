@@ -53,10 +53,10 @@ class CustomTextField extends StatelessWidget {
         // Testo di suggerimento dentro il campo.
         hintText: hintText,
 
-        // Bordo arrotondato moderno.
+        // Il Bordo arrotondato moderno.
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
 
-        // Colore del bordo quando il campo è attivo.
+        // Il Colore del bordo quando il campo è attivo.
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
