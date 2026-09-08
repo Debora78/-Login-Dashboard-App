@@ -15,7 +15,7 @@ https://docs.flutter.dev/get-started/install
 
 Estrarre lo zip in una cartella dedicata, ad esempio:
 
-C:\src\flutter
+C:\src\flutter        
 
 
 # Aggiungere Flutter al PATH:
