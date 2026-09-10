@@ -137,5 +137,30 @@ Questa applicazione rappresenta un progetto di apprendimento per:
 
 ====================================================================================
 
+## 🔮 Possibili implementazioni future
+Il progetto è attualmente in sviluppo e prevede diverse estensioni funzionali per migliorare l’esperienza utente e rendere l’app più completa e scalabile. Tra le evoluzioni pianificate:
+
+• Validazione avanzata dei campi (email, CAP, data di nascita, formati e obbligatorietà)
+
+• Tema scuro / light con switch dinamico e palette Material 3 personalizzata
+
+• Persistenza dei dati utente tramite SharedPreferences o database locale
+
+• Animazioni Material 3 per transizioni fluide tra schermate
+
+• Schermata impostazioni con preferenze utente e gestione account
+
+• Gestione reale dell’autenticazione tramite API REST o Firebase Auth
+
+• Upload immagine profilo con selezione da galleria o fotocamera
+
+• Refactoring architetturale verso MVVM o Clean Architecture per maggiore scalabilità
+
+• Test unitari e widget test per garantire stabilità e qualità del codice
+
+Queste implementazioni permetteranno di evolvere l’app da progetto formativo a soluzione completa e professionale.
+
+=============================================================================================
+
 ## 👩‍💻 Autrice
 Debora – Full‑stack developer in formazione
