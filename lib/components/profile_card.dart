@@ -1,5 +1,7 @@
 // Importiamo i widget base di Flutter.
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:login_dashboard_app/services/auth_service.dart';
 
 // La ProfileCard mostra i dati dell'utente registrato.
 // È completamente aggiornata per mostrare tutti i campi del form.
@@ -95,7 +97,9 @@ class ProfileCard extends StatelessWidget {
                 // Pulsante Modifica
                 ElevatedButton.icon(
                   onPressed: () {
-                    // Qui potrai aggiungere la logica di modifica profilo.
+                    context.go(
+                      '/edit-profile',
+                    ); // apre la schermata di modifica
                   },
                   icon: const Icon(Icons.edit),
                   label: const Text('Modifica'),
@@ -104,9 +108,10 @@ class ProfileCard extends StatelessWidget {
                 // Pulsante Logout
                 ElevatedButton.icon(
                   onPressed: () {
-                    // Navigazione verso login (logout simulato).
-                    Navigator.of(context).pushReplacementNamed('/login');
+                    AuthService.currentUser = null; // svuota l’utente
+                    context.go('/login'); // torna al login
                   },
+
                   icon: const Icon(Icons.logout),
                   label: const Text('Logout'),
                   style: ElevatedButton.styleFrom(
